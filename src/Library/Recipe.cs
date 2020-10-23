@@ -9,6 +9,9 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID.Library
 {
+    /* Expert: la clase Recipe es experta en conocer los objetos Steps para poder calcular el costo total de la produccion total.
+       SRP: se aplica ya que la clase Recipe tiene una unica razon de cambio es imprimir la receta. 
+     */
     public class Recipe
     {
         private List<Step> steps = new List<Step>();
