@@ -32,11 +32,8 @@ namespace Full_GRASP_And_SOLID.Library
             double cost = 0;   
             foreach(Step step in steps)
             {
-                //Costos de los Insumos
-                cost += step.Input.UnitCost * step.Quantity;
-
-                //Costos del Equipamiento
-                cost += step.Equipment.HourlyCost * step.Time;
+                //Costos del step
+                cost += step.GetCost();
             }
             
             return cost;
