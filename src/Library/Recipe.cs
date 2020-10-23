@@ -5,13 +5,13 @@
 //-------------------------------------------------------------------------
 
 using System;
-using System.Collections;
+using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID.Library
 {
     public class Recipe
     {
-        private ArrayList steps = new ArrayList();
+        private List<Step> steps = new List<Step>();
 
         public Product FinalProduct { get; set; }
 
