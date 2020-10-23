@@ -8,6 +8,10 @@ namespace Full_GRASP_And_SOLID.Library
 {
     public class Step
     {
+        /* Expert: la clase Step es experta en conocer el costo unitario de los steps para poder calcular el costo 
+        de la produccion de cada step(subtotal).
+        SRP: se aplica en la clase Step ya que la misma solo tiene una razon de cambio que es conocer el costo unitario de cada step.
+        */
         public Step(Product input, double quantity, Equipment equipment, int time)
         {
             this.Quantity = quantity;
